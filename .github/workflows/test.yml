@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Lets go
+    name: Lets go now
     runs-on: ubuntu-latest
     steps:
       - name: Get date
