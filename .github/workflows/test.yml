@@ -5,8 +5,6 @@ jobs:
   build:
     name: Lets go now
     runs-on: ubuntu-latest
-    env:
-    
     steps:
       - name: Get date
         run: date
