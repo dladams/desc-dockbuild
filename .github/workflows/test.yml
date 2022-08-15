@@ -1,0 +1,12 @@
+# Test workflow.
+name: test
+
+# Trigger workflow.
+on:
+  workflow_dispatch:
+
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get date
+        run: date
