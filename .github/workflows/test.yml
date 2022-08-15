@@ -5,7 +5,12 @@ jobs:
   build:
     name: Lets go now
     runs-on: ubuntu-latest
+    env:
+    
     steps:
+      - shell: bash
+        env:
+          MYSECRET: ${{ secrets.TESTSECRET }}
       - name: Get date
         run: date
       - name: Get secret
