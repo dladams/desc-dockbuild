@@ -9,11 +9,12 @@ jobs:
     
     steps:
       - shell: bash
-        env:
-          MYSECRET: ${{ secrets.TESTSECRET }}
+
       - name: Get date
         run: date
       - name: Get secret
+        env:
+          MYSECRET: ${{ secrets.TESTSECRET }}
         run: echo Secret is $MYSECRET
       - name: Check Disk Space
         run: df -h
