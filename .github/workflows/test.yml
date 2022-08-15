@@ -11,9 +11,7 @@ jobs:
       - name: Get secret
         env:
           MYSECRET: ${{ secrets.TESTSECRET }}
-        run:
-          echo ${{ secrets.TESTSECRET }} >secret.tmp
-          cat secret.tmp
+        run: echo ${{ secrets.TESTSECRET }} >secret.tmp; cat secret.tmp
       - name: Check Disk Space
         run: df -h
       - name: Docker login
