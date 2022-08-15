@@ -8,8 +8,6 @@ jobs:
     env:
     
     steps:
-      - shell: bash
-
       - name: Get date
         run: date
       - name: Get secret
