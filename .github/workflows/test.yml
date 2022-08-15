@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get date
-        run:
-          date
-          echo Secret: $MYSECRET
+        run: date
+      - name: Get secret
+        run: echo Secret is $MYSECRET
       - name: Check Disk Space
         run: df -h
       - name: Docker login
