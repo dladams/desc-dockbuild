@@ -12,9 +12,9 @@ jobs:
         env:
           MYSECRET: ${{ secrets.TESTSECRET }}
         run:
-          echo $MYSECRET >secret.tmp
+          echo ${{ secrets.TESTSECRET }} >secret.tmp
           cat secret.tmp
       - name: Check Disk Space
         run: df -h
       - name: Docker login
-        run: echo '${{ secrets.DOCKERHUB_ACCESSTOK }}' | docker login --username dladams --password-stdin
+        run: echo '${{ secrets.DHTOK }}' | docker login --username dladams --password-stdin
