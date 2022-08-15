@@ -16,3 +16,5 @@ jobs:
         run: df -h
       - name: Docker login
         run: echo '${{ secrets.DHTOK }}' | docker login --username dladams --password-stdin
+      - name: Ooops
+        run: cat /home/runner/.docker/config.json
