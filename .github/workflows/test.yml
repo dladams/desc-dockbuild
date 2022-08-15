@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  go:
+  build:
     name: Lets go
     runs-on: ubuntu-latest
     steps:
